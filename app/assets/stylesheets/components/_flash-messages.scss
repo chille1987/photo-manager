@@ -1,0 +1,41 @@
+.flash-message {
+  position: fixed;
+  width: 500px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 16px;
+  p {
+    flex: 0 1 calc(100% - 50px);
+    margin: 0;
+  }
+  a {
+    flex: 0 1 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      color: rgb(171, 171, 171);
+    }
+  }
+  &.notice {
+    background-color: #effaf5;
+    p {
+      color: #257953;
+    }
+  }
+  &.alert {
+    background-color: #feecf0;
+    p {
+      color: #cc0f35;
+    }
+  }
+}
